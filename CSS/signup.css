@@ -1,0 +1,108 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(7, 92, 0, 1) 37%,
+    rgba(99, 207, 115, 1) 74%
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 70%;
+  height: 90vh;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Left side: Sign-Up Form */
+.signup-form {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 28px; /* Reduced font size for heading */
+  color: #3627a6;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 12px; /* Reduced font size for labels */
+  color: #7c7c7c;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px; /* Reduced padding for inputs */
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px; /* Reduced font size for input text */
+}
+
+button {
+  padding: 10px; /* Reduced padding for buttons */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px; /* Reduced font size for buttons */
+  margin-bottom: 10px;
+}
+
+.signup-btn {
+  background-color: #378b44;
+  color: white;
+}
+
+.home-btn {
+  background-color: #605e69;
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.home-btn:hover {
+  background-color: #2b2084;
+}
+
+/* Right side: Image */
+.signup-image {
+  flex: 1;
+  background: radial-gradient(
+    circle,
+    rgba(7, 92, 0, 1) 28%,
+    rgba(99, 207, 115, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-image img {
+  width: 100%;
+  height: auto;
+}

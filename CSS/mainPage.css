@@ -1,0 +1,273 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Navbar styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav h1 {
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 16px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #215a29;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2); /* Slight transparency */
+  border-radius: 30px;
+  padding: 5px 10px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#search-input {
+  border: none;
+  background-color: transparent;
+  padding: 10px 15px;
+  font-size: 14px;
+  outline: none;
+  color: white; /* Text color */
+  width: 180px; /* Adjust width */
+}
+
+#search-input::placeholder {
+  color: white;
+  opacity: 0.8; /* Slight transparency for placeholder */
+}
+
+#search-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#search-btn svg {
+  width: 18px;
+  height: 18px;
+  filter: invert(1); /* Invert colors to make the search icon white */
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.login-btn,
+.signup-btn {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  color: white;
+}
+
+.login-btn {
+  background-color: #00509e;
+}
+
+.signup-btn {
+  background-color: #215a29;
+}
+
+/* Hero Section */
+#hero {
+  height: 100vh; /* Full viewport height */
+  background-image: url("../images/heroPage.jpg"); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Overlay to reduce visibility of the background image */
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1; /* Make sure the overlay stays below the content */
+}
+
+/* Content inside the hero section */
+.hero-text {
+  position: relative;
+  z-index: 2; /* Ensures the text stays above the overlay */
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-text button {
+  padding: 10px 20px;
+  background-color: #215a29;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.hero-text button:hover {
+  background-color: #215a50;
+}
+
+/* Hero Section for About Us Page */
+.about-us-hero {
+  background: radial-gradient(
+    circle,
+    rgba(7, 92, 0, 1) 28%,
+    rgba(99, 207, 115, 1) 100%
+  );
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero-text {
+  z-index: 1;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Updated About Us Content */
+.about-us-content {
+  padding: 50px 20px;
+  background-color: #378b44;
+  text-align: center; /* Center the content */
+}
+
+.about-container {
+  margin-bottom: 80px;
+  max-width: 800px; /* Limit content width for better readability */
+  margin-left: auto;
+  margin-right: auto; /* Center the container horizontally */
+}
+
+.about-container h2 {
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #d0d0d4;
+  margin-bottom: 25px;
+}
+
+/* Team Section */
+.team-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.team-member {
+  text-align: center;
+  flex: 1;
+  max-width: 200px; /* Limit the width of team members */
+  margin: 0 10px;
+}
+
+.team-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #f4f4f9;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #002147;
+  color: white;
+}

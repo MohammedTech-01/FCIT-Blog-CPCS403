@@ -1,0 +1,76 @@
+<!-- ID: 2136728
+ Name: Mohammed Ibrahim Ali Alluhaydan
+ Section: CS1
+ Date: 24/09/2024
+  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - FCIT Blog</title>
+    <link rel="stylesheet" href="../css/signup.css" />
+    <!-- Link to the external CSS file -->
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left Side: Sign Up Form -->
+      <div class="signup-form">
+        <h1>Create Your Account</h1>
+        <form action="#">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Choose a username"
+            required
+          />
+
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@mail.com"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="********"
+            required
+          />
+
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="********"
+            required
+          />
+
+          <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+
+        <!-- Back to Home Button -->
+        <button
+          type="button"
+          class="home-btn"
+          onclick="window.location.href='index.html';"
+        >
+          Back to Home
+        </button>
+      </div>
+
+      <!-- Right Side: Image -->
+      <div class="signup-image">
+        <img src="../images/signup.png" alt="Sign Up Image" />
+      </div>
+    </div>
+  </body>
+</html>
